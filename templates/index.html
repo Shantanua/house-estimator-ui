@@ -2,7 +2,57 @@
 <html lang="en">
 
 <head>
+<style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 100%;
+      }
+      .controls {
+        margin-top: 10px;
+        border: 1px solid transparent;
+        border-radius: 2px 0 0 2px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        height: 32px;
+        outline: none;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+      }
 
+      #pac-input {
+        background-color: #fff;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+        margin-left: 12px;
+        padding: 0 11px 0 13px;
+        text-overflow: ellipsis;
+        width: 300px;
+      }
+
+      #pac-input:focus {
+        border-color: #4d90fe;
+      }
+
+      .pac-container {
+        font-family: Roboto;
+      }
+
+      #type-selector {
+        color: #fff;
+        background-color: #4d90fe;
+        padding: 5px 11px 0px 11px;
+      }
+
+      #type-selector label {
+        font-family: Roboto;
+        font-size: 13px;
+        font-weight: 300;
+      }
+    </style>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -55,10 +105,7 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#start">The Start</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#analysis">Analysis</a>
+                        <a class="page-scroll" href="#start">Introduction</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#about">About</a>
@@ -87,7 +134,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">The Start</h2>
+                    <h2 class="section-heading">Introduction</h2>
                     <h3 class="section-subheading text-muted"></h3>
                 </div>
             </div>
@@ -115,104 +162,6 @@
                     </span>
                     <h4 class="service-heading">Web Security</h4>
                     <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                </div>-->
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio Grid Section -->
-    <section id="analysis" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">In Depth Analysis</h2>
-                    <h3 class="section-subheading text-muted">Coming Soon</h3>
-                </div>
-            </div>
-            <div class="row">
-                <!--<div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/roundicons.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Round Icons</h4>
-                        <p class="text-muted">Graphic Design</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/startup-framework.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Startup Framework</h4>
-                        <p class="text-muted">Website Design</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/treehouse.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Treehouse</h4>
-                        <p class="text-muted">Website Design</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/golden.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Golden</h4>
-                        <p class="text-muted">Website Design</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/escape.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Escape</h4>
-                        <p class="text-muted">Website Design</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/dreams.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Dreams</h4>
-                        <p class="text-muted">Website Design</p>
-                    </div>
                 </div>-->
             </div>
         </div>
@@ -250,10 +199,10 @@
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
                                     <h4>June 2016</h4>
-                                    <h4 class="subheading">Model based on Xtreme Gradient Boosting</h4>
+                                    <h4 class="subheading">Model based on Ridge Regression</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Played with Xtreme Gradient Boosting which is a combination Gradient Boosting + Regularization</p>
+                                    <p class="text-muted">Played with Ridge Regression to create a model</p>
                                 </div>
                             </div>
                         </li>
@@ -285,6 +234,13 @@
     </section>
 
     <section id="estimator">
+      {% if scroll %}
+      <script>
+          document.getElementById('{{ scroll }}').scrollIntoView();
+          // or
+          document.location.hash = '#' + '{{ scroll }}';
+      </script>
+      {% endif %}
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -292,68 +248,62 @@
                 </div>
             </div>
             <div class="row">
+              <h4 class="subheading"><span>{{display_estimate}}</span></h4>
                 <div class="col-lg-12">
-                    <form name="sentMessage" id="contactForm" novalidate>
+                    <form action="." method = "POST">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                  <label for="sel1">Bedrooms:</label>
-                                    <input type="text" class="form-control" id="bedrooms" required data-validation-required-message="Please enter your name.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="form-group">
-                                  <label for="sel1">Bathrooms:</label>
-                                    <input type="email" class="form-control" id="bathrooms" required data-validation-required-message="Please enter your email address.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="form-group">
-                                  <label for="sel1">Floor-size:</label>
-                                    <input type="tel" class="form-control" id="floorsize" required data-validation-required-message="Please enter your phone number.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="form-group">
-                                  <label for="sel1">Lot-size:</label>
-                                    <input type="tel" class="form-control" id="lotsize" required data-validation-required-message="Please enter your phone number.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="form-group">
-                                  <label for="sel1">Stories:</label>
-                                    <input type="tel" class="form-control" id="stories" required data-validation-required-message="Please enter your phone number.">
+                                  <label for="sel1">City:</label>
+                                    <input type="text" class="form-control" name="city"  id="city">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
                                   <label for="sel1">Zipcode:</label>
-                                    <input type="tel" class="form-control" id="zipcode" required data-validation-required-message="Please enter your phone number.">
+                                    <input type="text" class="form-control" name="zipcode" id="zipcode">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                  <label for="sel1">Flooring:</label>
-                                  <select class="form-control" id="exterior">
-                                    <option>Hardwood</option>
-                                    <option>Laminated</option>
-                                    <option>Parquet</option>
-                                    <option>Brick</option>
-                                    <option>Ceramic</option>
-                                    <option>Carpet</option>
-                                    <option>Linoleum</option>
-                                    <option>Vinyl</option>
-                                    <option>Marble</option>
-                                    <option>Tile</option>
-                                  </select>
+                                  <label for="sel1">State:</label>
+                                    <input type="text" class="form-control" name="state" id="state">
+                                    <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                  <label for="sel1">Exterior:</label>
-                                  <select class="form-control" id="exterior">
-                                    <option>Brick</option>
-                                    <option>Wood</option>
-                                    <option>Shingle</option>
-                                    <option>Cement</option>
-                                    <option>Concrete</option>
-                                    <option>Vinyl</option>
-                                    <option>Metal</option>
-                                    <option>Stone</option>
-                                    <option>Stucco</option>
-                                  </select>
+                                  <label for="sel1">Bedrooms:</label>
+                                    <input type="number" class="form-control" name="bedrooms" id="bedrooms">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                  <label for="sel1">Bathrooms:</label>
+                                    <input type="number" class="form-control" name="bathrooms" id="bathrooms">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="form-group">
+                                  <label for="sel1">Floor-size:</label>
+                                    <input type="number" class="form-control" name="floorsize" id="floorsize">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                  <label for="sel1">Lot-size:</label>
+                                    <input type="number" class="form-control" name="lotsize" id="lotsize">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                  <label for="text">Stories:</label>
+                                    <input type="number" class="form-control" name="stories" id="stories">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                  <label for="text">Built in:</label>
+                                    <input type="number" class="form-control" name="built_in" id="built_in">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                  <label for="text">Unit Count:</label>
+                                    <input type="number" class="form-control" name="unitcount" id="unitcount">
+                                    <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="clearfix"></div>
@@ -372,7 +322,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; Your Website 2014</span>
+                    <span class="copyright">Copyright &copy; House Estimator 2016</span>
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
@@ -384,14 +334,14 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-4">
+                <!--<div class="col-md-4">
                     <ul class="list-inline quicklinks">
                         <li><a href="#">Privacy Policy</a>
                         </li>
                         <li><a href="#">Terms of Use</a>
                         </li>
                     </ul>
-                </div>
+                </div>-->
             </div>
         </div>
     </footer>
@@ -579,11 +529,91 @@
 
     <!-- Contact Form JavaScript -->
     <script src="{{ url_for('static', filename='js/jqBootstrapValidation.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/contact_me.js') }}"></script>
 
     <!-- Custom Theme JavaScript -->
     <script src="{{ url_for('static', filename='js/agency.js') }}"></script>
+    <script>
+         // This example requires the Places library. Include the libraries=places
+         // parameter when you first load the API. For example:
+         // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
 
+         function initMap() {
+           var map = new google.maps.Map(document.getElementById('map'), {
+             center: {lat: -33.8688, lng: 151.2195},
+             zoom: 13
+           });
+           var input = /** @type {!HTMLInputElement} */(
+               document.getElementById('pac-input'));
+
+           var types = document.getElementById('type-selector');
+           map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+           map.controls[google.maps.ControlPosition.TOP_LEFT].push(types);
+
+           var autocomplete = new google.maps.places.Autocomplete(input);
+           autocomplete.bindTo('bounds', map);
+
+           var infowindow = new google.maps.InfoWindow();
+           var marker = new google.maps.Marker({
+             map: map,
+             anchorPoint: new google.maps.Point(0, -29)
+           });
+
+           autocomplete.addListener('place_changed', function() {
+             infowindow.close();
+             marker.setVisible(false);
+             var place = autocomplete.getPlace();
+             if (!place.geometry) {
+               window.alert("Autocomplete's returned place contains no geometry");
+               return;
+             }
+
+             // If the place has a geometry, then present it on a map.
+             if (place.geometry.viewport) {
+               map.fitBounds(place.geometry.viewport);
+             } else {
+               map.setCenter(place.geometry.location);
+               map.setZoom(17);  // Why 17? Because it looks good.
+             }
+             marker.setIcon(/** @type {google.maps.Icon} */({
+               url: place.icon,
+               size: new google.maps.Size(71, 71),
+               origin: new google.maps.Point(0, 0),
+               anchor: new google.maps.Point(17, 34),
+               scaledSize: new google.maps.Size(35, 35)
+             }));
+             marker.setPosition(place.geometry.location);
+             marker.setVisible(true);
+
+             var address = '';
+             if (place.address_components) {
+               address = [
+                 (place.address_components[0] && place.address_components[0].short_name || ''),
+                 (place.address_components[1] && place.address_components[1].short_name || ''),
+                 (place.address_components[2] && place.address_components[2].short_name || '')
+               ].join(' ');
+             }
+
+             infowindow.setContent('<div><strong>' + place.name + '</strong><br>' + address);
+             infowindow.open(map, marker);
+           });
+
+           // Sets a listener on a radio button to change the filter type on Places
+           // Autocomplete.
+           function setupClickListener(id, types) {
+             var radioButton = document.getElementById(id);
+             radioButton.addEventListener('click', function() {
+               autocomplete.setTypes(types);
+             });
+           }
+
+           setupClickListener('changetype-all', []);
+           setupClickListener('changetype-address', ['address']);
+           setupClickListener('changetype-establishment', ['establishment']);
+           setupClickListener('changetype-geocode', ['geocode']);
+         }
+       </script>
+       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYNP19gKE_knQY6pSwRnHrFH3WzSRFs&libraries=places&callback=initMap"
+           async defer></script>
 </body>
 
 </html>
